@@ -13,6 +13,18 @@ html, body{
     width: 100%;
     height: 100%;
 }
+
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.771);
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
+
 #loader{
     height: 100%;
     width: 100%;
@@ -53,6 +65,8 @@ html, body{
     font-size: 7vw;
     text-transform: uppercase;
     font-weight: 900;
+    height: fit-content;
+    overflow: hidden;
 }
 .line h2{
     font-size: 5.4vw;
@@ -106,4 +120,56 @@ html, body{
     height: 100vh;
     width: 100vw;
     background-color: #191919;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 5vw;
+}
+
+#navPart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#navPart2 h4{
+    font-size: 1.19vw;
+    font-weight: 500;
+}
+
+.page1CLines{
+    /* background-color: red; */
+    width: 72.5%;
+    margin-left: 27.5%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+.page1CLines:nth-child(2){
+    margin-top: 8vh;
+}
+.page1CLines h1{
+    font-size: 7.3vw;
+    text-transform: uppercase;
+    line-height: 7.3vw;
+    font-weight: 600;
+    letter-spacing: 0.3vw;
+}
+ .page1CLines h2{
+    font-size: 7.3vw;
+    text-transform: uppercase;
+    line-height: 7.3vw;
+    font-weight: 600;
+    letter-spacing: 0.3vw;
+}
+
+.page1CLines h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 300;
 }
